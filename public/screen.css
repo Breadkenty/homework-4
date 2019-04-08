@@ -27,6 +27,7 @@ nav img {
 
 nav ul {
   list-style: none;
+  width: 300px;
   margin-right: 20px;
   display: flex;
   justify-content: flex-end;
@@ -111,4 +112,89 @@ div.creator-footer::before {
   height: 28px;
   width: 28px;
   margin-left: 8px;
+}
+
+@media (max-width: 450px) {
+  nav img {
+    margin-left: 10px;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    display: flex-start;
+  }
+
+  li {
+    font-weight: bold;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  /* vv listing vv */
+
+  .wrapper {
+    margin: 20px 5px;
+  }
+
+  .listing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .octocat-list-block {
+    width: 350px;
+  }
+  .octocat-list-block-image {
+    height: 350px;
+    width: 350px;
+    border: solid #cacaca 1px;
+    border-radius: 3px;
+  }
+
+  .creator-footer {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 28px;
+    width: 350px;
+    padding: 12px 0px;
+    position: relative;
+    border-bottom: 1px #cacaca solid;
+  }
+
+  div.creator-footer::before {
+    content: "";
+    border: 8px solid transparent;
+    border-top-color: #cacaca;
+    position: absolute;
+    right: 6px;
+
+    top: -4px;
+  }
+
+  .number {
+    color: #cacaca;
+    font-size: 16px;
+  }
+
+  .creator {
+    color: #777;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .author-name {
+    color: #333;
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  .creator-avatar {
+    height: 28px;
+    width: 28px;
+    margin-left: 8px;
+  }
 }
